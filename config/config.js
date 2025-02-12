@@ -1,5 +1,3 @@
-// config.js
-
 // Função para obter a URL da API com base no ambiente
 function getApiUrl(env) {
     const urls = {
