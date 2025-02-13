@@ -9,6 +9,7 @@ Este projeto é um bot de negociação automatizado que utiliza a API do Binance
   - `constants.js`: Armazena as constantes usadas no projeto (símbolos, períodos, quantidades, etc).
 
 - **/services**: Pasta que contém os serviços principais do projeto.
+  - `api.js`: Tem a função de centralizar e organizar as chamadas HTTP que o aplicativo faz para a API do Binance.
   - `rsiCalculator.js`: Funções para calcular o valor do RSI com base nos preços de fechamento.
   - `tradingOperations.js`: Define as operações de negociação, incluindo a criação de novas ordens.
 
