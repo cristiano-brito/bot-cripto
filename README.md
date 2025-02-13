@@ -24,12 +24,12 @@ Este projeto é um bot de negociação automatizado que utiliza a API do Binance
 ## Pré-requisitos
 
 Certifique-se de ter o Node.js instalado em sua máquina. Além disso, você precisará das chaves de API do Binance Testnet.
-Site: [Binance Testnet](https://testnet.binance.vision/)
+[Binance Testnet](https://testnet.binance.vision/)
 
 ## Instalação
 
 1. Clone o repositório:
    ```sh
-   git clone https://github.com/seu-usuario/bot-cripto.git
+   git clone https://github.com/cristiano-brito/bot-cripto.git
    cd bot-cripto
 
