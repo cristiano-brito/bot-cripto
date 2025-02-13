@@ -1,14 +1,13 @@
 // Carrega variáveis de ambiente do arquivo .env
 require('dotenv').config();
 
-const axios = require("axios");
-const { API_URL, environment } = require('./config/config');
+const { getKlines } = require('./services/api');
 const { RSI } = require('./services/rsiCalculator');
 const { verificarEExecutarOrdemBTC } = require('./services/tradingOperations');
-const { SYMBOL, PERIODO } = require('./config/constants');
+const { SYMBOL, PERIODO, INTERVAL, LIMIT } = require('./config/constants');
 
 async function start() {
-    const { data } = await axios.get(`${API_URL}/api/v3/klines?symbol=${SYMBOL}&interval=15m&limit=100`);
+    const data = await getKlines(SYMBOL, INTERVAL, LIMIT);
     const vela = data[data.length - 1];
     const lastPrice = parseFloat(vela[4]);
 
