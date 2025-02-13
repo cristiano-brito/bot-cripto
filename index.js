@@ -5,9 +5,7 @@ const axios = require("axios");
 const { API_URL, environment } = require('./config/config');
 const { RSI } = require('./services/rsiCalculator');
 const { verificarEExecutarOrdemBTC } = require('./services/tradingOperations');
-
-const SYMBOL = 'BTCUSDT'; 
-const PERIODO = 14;
+const { SYMBOL, PERIODO } = require('./config/constants');
 
 async function start() {
     const { data } = await axios.get(`${API_URL}/api/v3/klines?symbol=${SYMBOL}&interval=15m&limit=100`);
