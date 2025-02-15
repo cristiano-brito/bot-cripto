@@ -12,5 +12,5 @@ function getApiUrl(env) {
   const environment = process.env.NODE_ENV || "producao";
   const API_URL = getApiUrl(environment);
   
-  module.exports = { API_URL, environment };
+  module.exports = { API_URL, environment, getApiUrl };
   
