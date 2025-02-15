@@ -2,7 +2,7 @@
 
 Este projeto é um bot de negociação automatizado que utiliza a API do Binance para comprar e vender BTCUSDT com base no Indicador de Força Relativa (RSI). O bot verifica periodicamente o valor do RSI e toma decisões de negociação automaticamente.
 
-### Descrição das Pastas e Arquivos
+## Descrição das Pastas e Arquivos
 
 - **/config**: Pasta que contém arquivos de configuração.
   - `config.js`: Define as URLs da API com base no ambiente (teste ou produção).
@@ -12,6 +12,11 @@ Este projeto é um bot de negociação automatizado que utiliza a API do Binance
   - `api.js`: Tem a função de centralizar e organizar as chamadas HTTP que o aplicativo faz para a API do Binance.
   - `rsiCalculator.js`: Funções para calcular o valor do RSI com base nos preços de fechamento.
   - `tradingOperations.js`: Define as operações de negociação, incluindo a criação de novas ordens.
+
+- **/tests**: Pasta que contém os arquivos de teste para as diferentes funcionalidades do projeto.
+  - `index.test.js`: Testes para as funções no arquivo `index.js`.
+  - `tradingOperations.test.js`: Testes para as funções no arquivo `tradingOperations.js`.
+  - Outros arquivos de teste organizados conforme necessário.
 
 - **/node_modules**: Pasta que contém as dependências do Node.js instaladas.
 
@@ -32,4 +37,3 @@ Certifique-se de ter o Node.js instalado em sua máquina. Além disso, você pre
    ```sh
    git clone https://github.com/cristiano-brito/bot-cripto.git
    cd bot-cripto
-
