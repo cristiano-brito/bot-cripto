@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "jest --forceExit --detectOpenHandles",
+    "test:coverage": "jest --watch --coverage --forceExit --detectOpenHandles"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +15,8 @@
     "axios": "^1.7.9",
     "dotenv": "^16.4.7",
     "moment": "^2.30.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }
