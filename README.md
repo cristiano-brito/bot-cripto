@@ -1,4 +1,4 @@
-# Bot de Negociação para Binance 
+# Bot de Negociação para Binance
 
 Este projeto é um bot de negociação automatizado que utiliza a API do Binance para comprar e vender BTCUSDT com base no Indicador de Força Relativa (RSI). O bot verifica periodicamente o valor do RSI e toma decisões de negociação automaticamente.
 
@@ -19,6 +19,9 @@ Este projeto é um bot de negociação automatizado que utiliza a API do Binance
   - Outros arquivos de teste organizados conforme necessário.
 
 - **/node_modules**: Pasta que contém as dependências do Node.js instaladas.
+
+- **/.github/workflows**: Pasta que contém os arquivos de workflow para CI.
+  - `workflow.yaml`: Arquivo de configuração do GitHub Actions para integração contínua.
 
 - **.env**: Arquivo que contém variáveis de ambiente, como chaves de API.
 
