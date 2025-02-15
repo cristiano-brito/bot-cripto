@@ -21,4 +21,11 @@ async function start() {
     verificarEExecutarOrdemBTC(rsi);
 }
 
-setInterval(start, 3000);
+const pararSetInterval = setInterval(start, 3000);
+
+function stopInterval() {
+    clearInterval(pararSetInterval);
+    console.log('Intervalo parado.');
+}
+
+module.exports = { start, stopInterval };
